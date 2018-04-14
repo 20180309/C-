@@ -1,0 +1,57 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+	int a,b,c,d,t;
+	printf("请输入第一个数:\n");
+    scanf("%d",&a);
+	printf("a=%d\n",a);
+	printf("请输入第二个数:\n");
+	scanf("%d",&b);
+	printf("b=%d\n",b);
+	printf("请输入第三个数:\n");
+	scanf("%d",&c);
+	printf("c=%d\n",c);
+	printf("请输入第四个数:\n");
+	scanf("%d",&d);
+	printf("d=%d\n",d);
+	if(a<b)
+	{
+		t=a;
+		a=b;
+		b=t;
+	} 
+	if(a<c)
+	{
+		t=a;
+		a=c;
+		c=t;
+	}
+	if(a<d)
+	{
+		t=a;
+		a=d;
+		d=t;
+	}
+	if(b<c)
+	{
+		t=b;
+		b=c;
+		c=t;
+	}
+	if(b<d)
+	{
+		t=b;
+		b=d;
+		d=t;
+	}
+	if(c<d)
+	{
+		t=c;
+		c=d;
+		d=t;
+	} 
+	printf("排列结果为:\n");
+	printf("%d %d %d %d \n",a,b,c,d);
+return 0;
+} 
